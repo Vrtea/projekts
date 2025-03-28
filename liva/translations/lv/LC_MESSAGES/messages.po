@@ -1,0 +1,29 @@
+msgid "Public Transport Impact"
+msgstr "Sabiedriskā transporta ietekme"
+
+msgid "Home"
+msgstr "Mājas"
+
+msgid "Upload Data"
+msgstr "Augšupielādēt datus"
+
+msgid "Dashboard"
+msgstr "Paneļa skats"
+
+msgid "Welcome to the Public Transport Impact Analysis App"
+msgstr "Laipni lūdzam Sabiedriskā transporta ietekmes analīzes lietotnē"
+
+msgid "Analyze the environmental impact of public transportation using CO₂ emission data."
+msgstr "Analizējiet sabiedriskā transporta ietekmi uz vidi, izmantojot CO₂ emisiju datus."
+
+msgid "Upload Data"
+msgstr "Augšupielādēt datus"
+
+msgid "View Dashboard"
+msgstr "Skatīt paneļa skatu"
+
+msgid "English"
+msgstr "Angļu"
+
+msgid "Latvian"
+msgstr "Latviešu"

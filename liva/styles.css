@@ -1,0 +1,322 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f3f4f9, #cfd9e3);
+    color: #2c3e50;
+    line-height: 1.6;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2d3e50;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3498db;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 30px;
+    font-size: 1.1rem;
+    padding: 16px 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-primary:hover {
+    background-color: #1f6fae;
+    transform: translateY(-5px);
+}
+
+.btn-primary:focus {
+    outline: none;
+}
+
+.btn-secondary {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.btn-secondary:hover {
+    background-color: #27ae60;
+    transform: translateY(-5px);
+}
+
+/* Neumorphism Effect */
+.neumorphism {
+    background: #e0e5ec;
+    border-radius: 25px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.neumorphism:hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Card-style containers for data visualizations */
+.graph-container {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.graph-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.graph-container h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+/* Parallax Scrolling */
+.parallax {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    z-index: -1;
+    animation: parallax 30s infinite linear;
+}
+
+@keyframes parallax {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+/* Input and Form Styles */
+.form-control {
+    border-radius: 20px;
+    padding: 15px 20px;
+    border: 2px solid #3498db;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #2c3e50;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Image Effects */
+.graph-container img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.graph-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effects on Images/Graphs */
+.graph-container div {
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.graph-container div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+    color: #ecf0f1;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.8s ease-out;
+}
+
+/* Scroll Effect */
+.scroll-effect {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.scroll-effect.visible {
+    opacity: 1;
+}
+
+/* Hover Parallax Effect */
+.hover-parallax {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    transition: transform 0.3s ease;
+}
+
+.hover-parallax:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    .graph-container {
+        padding: 20px;
+    }
+
+    .btn {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+}

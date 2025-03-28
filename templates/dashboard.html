@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Informācijas panelis') }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">Transporta ietekme</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Sākums</a></li>
+            <li class="nav-item"><a class="nav-link" href="/upload">Augšupielādēt datus</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/dashboard">Informācijas panelis</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center mb-4">CO₂ emisiju informācijas panelis</h2>
+
+        <!-- CO₂ Emission Bar Graph -->
+        <div class="graph-container">
+            <h4>{{ _('Transporta radītās CO₂ emisijas') }}</h4>
+            <div>{{ graph1|safe }}</div>
+        </div>
+
+        <!-- Passenger Histogram -->
+        <div class="graph-container">
+            <h4>{{ _('Pasažieru izplatīšana') }}</h4>
+            <img src="data:image/png;base64,{{ histogram }}" alt="Passenger Histogram" class="img-fluid">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

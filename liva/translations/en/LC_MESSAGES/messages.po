@@ -1,0 +1,29 @@
+msgid "Public Transport Impact"
+msgstr "Public Transport Impact"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Upload Data"
+msgstr "Upload Data"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Welcome to the Public Transport Impact Analysis App"
+msgstr "Welcome to the Public Transport Impact Analysis App"
+
+msgid "Analyze the environmental impact of public transportation using CO₂ emission data."
+msgstr "Analyze the environmental impact of public transportation using CO₂ emission data."
+
+msgid "Upload Data"
+msgstr "Upload Data"
+
+msgid "View Dashboard"
+msgstr "View Dashboard"
+
+msgid "English"
+msgstr "English"
+
+msgid "Latvian"
+msgstr "Latvian"

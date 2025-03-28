@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Augšupielādēt datus') }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">Transporta ietekme</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Sākums</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/upload">{{ _('Augšupielādēt datus') }}</a></li>
+            <li class="nav-item"><a class="nav-link" href="/dashboard">{{ _('Informācijas panelis') }}</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center mb-4">{{ _('Augšupielādējiet savus CSV datus') }}</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="file" class="form-label">{{ _('Izvēlieties CSV failu') }}</label>
+                <input type="file" name="file" class="form-control" id="file" required>
+            </div>
+            <button type="submit" class="btn btn-primary">{{ _('Augšupielādēt') }}</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
